@@ -1,0 +1,36 @@
+body {
+    background-color: #3b2314;
+    color: #f5e6d3;
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, .navbar-brand {
+    font-family: 'Rye', cursive;
+}
+
+.bg-fazenda {
+    background-color: #26160c !important;
+}
+
+.card-fazenda {
+    background-color: #fdf6e7;
+    color: #26160c;
+    border: 2px solid #8c532b;
+    border-radius: 12px;
+}
+
+.btn-fazenda {
+    background-color: #8c532b;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-fazenda:hover {
+    background-color: #6a3e1f;
+    color: #ffffff;
+}
+
+.badge-roca {
+    background-color: #dc3545;
+}

@@ -1,0 +1,12 @@
+{
+  "name": "votacao-fazenda",
+  "version": "1.0.0",
+  "description": "Projeto Votação A Fazenda 2026",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3000"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}

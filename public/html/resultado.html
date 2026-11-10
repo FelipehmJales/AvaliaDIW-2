@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Fazenda 2026 - Resultado</title>
+    <link href="public/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-fazenda shadow">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="public/html/index.html">
+                <img src="public/img/logo-fazenda.jpg" alt="Logo" width="40" height="40" class="me-2 rounded">
+                Votação 2026
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="public/html/index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="public/html/votacao.html">Votar</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="public/html/resultado.html">Resultado</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <h2>Parcial da eliminação</h2>
+        <p class="fs-4"><strong id="total-votos">0</strong> votos computados</p>
+
+        <div id="resultado-container" class="mt-4"></div>
+
+        <button type="button" class="btn btn-outline-light mt-4" data-bs-toggle="modal" data-bs-target="#modalZerar">
+            Zerar votação
+        </button>
+    </main>
+
+    <div class="modal fade" id="modalZerar" tabindex="-1" aria-labelledby="modalZerarLabel" aria-hidden="true">
+        <div class="modal-dialog text-dark">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalZerarLabel">Confirmar exclusão</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Tem certeza de que deseja apagar todos os votos gravados no servidor?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger" onclick="confirmarEZerarVotos()">Zerar votação</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="public/js/api.js"></script>
+    <script src="public/js/resultado.js"></script>
+    <script src="public/lib/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
